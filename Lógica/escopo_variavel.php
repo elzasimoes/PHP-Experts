@@ -8,8 +8,9 @@
     (
         $a = 3;
         $b = 5;
-        global $a, $b;
-        echo $a+$b;
+      
+
+        echo $GLOBALS['a']+ $GLOBALS['b'];
     )
         
         echo "resultado: ";
