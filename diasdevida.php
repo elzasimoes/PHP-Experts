@@ -2,20 +2,18 @@
 
 if ($_POST["enviado"]=="S") {
      
-    $nome = $_POST["nome"];
-    $idade = $_POST["idade"];
-    $cargo = $_POST["cargo"];
-    $salario = $_POST["salario"];
+    $ano = $_POST["ano"];
+    $mes = $_POST["mes"];
+    $dia = $_POST["dia"];
     
-    $reajuste = 0.38 * $salario;
-    $gratificacao = 0.20 * $salario;
+    $idadeDias = 365 * $ano + 30 * $mes + $dia;
 
-    $salarioTotal = $salario + $reajuste + $gratificacao;
 
-    $salarioLiquido = $salarioTotal - 0.15 * $salarioTotal;
-
+    $solucao = "<hr><p> Ano: $ano </p>
+                <hr><p> Mês: $mes </p>
+                <hr><p> Dias: $dia </p>
+                <hr><p> Total de Dias: $idadeDias </p>";
  }
-
 
 ?>
 
@@ -25,10 +23,17 @@ if ($_POST["enviado"]=="S") {
 
 Ano: <input type = text name ="ano">
 Mes: <input type = text name ="mes">
-Dias: <input type = text name ="dias">
+Dias: <input type = text name ="dia">
 
-<input type = "hideen" name = "enviado" value="8">
+<input type = "hidden" name = "enviado" value="S">
 <input type = "submit" value = "calcular">
 
 
 </form>
+
+
+<?php
+
+echo  $solucao;
+
+?>

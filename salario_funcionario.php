@@ -1,17 +1,12 @@
 <?php
  if ($_POST["enviado"]=="S") {
      
-    $nome = $_POST["nome"];
-    $idade = $_POST["idade"];
-    $cargo = $_POST["cargo"];
-    $salario = $_POST["salario"];
+    $ano = $_POST["ano"];
+    $mes = $_POST["mes"];
+    $dia = $_POST["dia"];
     
-    $reajuste = 0.38 * $salario;
-    $gratificacao = 0.20 * $salario;
 
-    $salarioTotal = $salario + $reajuste + $gratificacao;
-
-    $salarioLiquido = $salarioTotal - 0.15 * $salarioTotal;
+   $idadeDias = 365* $ano + 30 * $mes + $dia;
 
  }
 
