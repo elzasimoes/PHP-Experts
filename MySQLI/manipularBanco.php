@@ -1,3 +1,5 @@
+
+
 <?php
 
 $servidor = "127.0.0.1";
@@ -19,3 +21,4 @@ else
     echo "Não foi possível";
 
 
+//Conexão e manipulação
