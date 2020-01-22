@@ -7,9 +7,10 @@ $banco = "curso_mysqli";
 
 $conexao = @mysqli_connect($servidor, $usuario, $senha, $banco) or die ("Não foi possível fazer a conexão com o banco de dados");
 
-$qry = "INSERT INTO cliente(cliente, email, fone, endereco) VALUES('Rayane', 'fulano@gmail.com', 'rua 49,50','7777-7777')";
+$qryInsert = "INSERT INTO cliente(cliente, email, fone, endereco) VALUES('Rayane', 'fulano@gmail.com', 'rua 49,50','7777-7777')";
+$qryUpdate = "UPDATE cliente set endereco = 'rua tal tal 58' where id_cliente = 2";
 
-$resultado = @mysqli_query($conexao, $qry);
+$resultado = @mysqli_query($conexao, $qryUpdate);
 
 if ($resultado)
     echo "Operação realizada com sucesso";
