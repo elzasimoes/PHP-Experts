@@ -2,40 +2,43 @@
 
 <?php
 
-    require("conexão.php");
-    if (isset($_POST["enviado"])){
-        $categoria = $_POST["categoria"];
-        $ativo = $_POST["ativo"];
+require("conexão.php");
+if (isset($_POST["enviado"])) {
+    $categoria = $_POST["categoria"];
+    $ativo = $_POST["ativo"];
 
-        $sql = "INSERT INTO categoria (categoria, ativo_categoria) VALUES('$categoria','$ativo')";
-        $qry = mysqli_query($conexao, $sql);
+    $sql = "INSERT INTO categoria (categoria, ativo_categoria) VALUES('$categoria','$ativo')";
+    $qry = mysqli_query($conexao, $sql);
 
     if ($qry)
         header("location:lista_categoria.php");
     else
         echo "Não foi possível inserir os dados: "  . mysqli_error($conexao);
-    }
+}
 
 
 ?>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title> Sistema de Produto</title>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <title> Sistema de Produto</title>
+</head>
 
 <body>
-           <form method="post">
+    <form method="post">
 
-           Categoria <input type="text" name="categoria">
-           Ativo <input type="text" name="ativo">
-                
-                <input type="hidden" name="enviado" value="ok">
-                <input type="submit" value="Cadastrar">
+        Categoria <input type="text" name="categoria">
+        Ativo <input type="text" name="ativo">
 
-           </form>
-<body>
-<body>
+        <input type="hidden" name="enviado" value="ok">
+        <input type="submit" value="Cadastrar">
+
+    </form>
+
+    <body>
+
+        <body>
 
 </html>
