@@ -5,16 +5,15 @@
     require("conexão.php");
     if (isset($_POST["enviado"])){
         $id_categoria = $_POST["id"];
-        $categoria = $_POST["categoria"];
-        $ativo = $_POST["ativo"];
+        
 
-        $sql = "UPDATE categoria SET categoria = '$categoria', ativo_categoria = '$ativo' WHERE id_categoria = $id_categoria";
+        $sql = "DELETE FROM categoria WHERE id_categoria = $id_categoria";
         $qry = mysqli_query($conexao, $sql);
 
     if ($qry)
         header("location:lista_categoria.php");
     else
-        echo "Não foi possível editar os dados: "  . mysqli_error($conexao);
+        echo "Não foi possível excluir os dados: "  . mysqli_error($conexao);
     } else if (isset($_GET["id"])) {
 
         $sql = "SELECT * FROM categoria WHERE id_categoria = ".$_GET["id"];
@@ -37,7 +36,7 @@
 
 <body>
 
-            <h2>Editar Categoria</h2>
+            <h2>Excluir Categoria</h2>
            <form method="post">
 
            Categoria <input type="text" name="categoria" value="<?php echo $categoria?>">
@@ -46,7 +45,7 @@
                 <input type="hidden" name="enviado" value="ok">
                 <input type="hidden" name="id" value="<?php echo $id_categoria?>">
 
-                <input type="submit" value="Excluir">
+                <input type="submit" value="Cadastrar">
 
            </form>
 <body>

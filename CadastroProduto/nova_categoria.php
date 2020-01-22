@@ -27,6 +27,7 @@ if (isset($_POST["enviado"])) {
 </head>
 
 <body>
+    <h2>Nova Categoria</h2>
     <form method="post">
 
         Categoria <input type="text" name="categoria">
