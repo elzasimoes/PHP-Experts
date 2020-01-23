@@ -1,20 +1,22 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Crud</title>
+    <title>Crud Genérico</title>
 </head>
 
 <body>
     <?php
     require("crud.php");
-    abrirConexao();
+    $conexao = abrirConexao();
 
-
+    $dados = consultar("produto");
+    
+    
+    print_r($dados);
+   
     ?>
+
 </body>
 
 </html>
