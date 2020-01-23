@@ -2,10 +2,10 @@
 
 <?php
 
-require("conexão.php");
+require("conexao.php");
 if (isset($_POST["enviado"])) {
     $categoria = $_POST["categoria"];
-    $ativo = $_POST["ativo"];
+    $ativo = $_POST["ativo_produto"];
 
     $sql = "INSERT INTO categoria (categoria, ativo_categoria) VALUES('$categoria','$ativo')";
     $qry = mysqli_query($conexao, $sql);
@@ -13,7 +13,7 @@ if (isset($_POST["enviado"])) {
     if ($qry)
         header("location:lista_categoria.php");
     else
-        echo "Não foi possível inserir os dados: "  . mysqli_error($conexao);
+        echo "Não foi possível inserir os dados" . mysqli_error($conexao);
 }
 
 

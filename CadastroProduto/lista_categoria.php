@@ -11,15 +11,14 @@
 
     <a href="index.php"> Home </a> | <a href="nova_categoria.php">Novo Cadastro</a>
     <table border="1">
-        <tr>
-            <td><?php echo $linha("id_categoria") ?></td>
-            <td><?php echo $linha("categoria") ?></td>
-            <td><?php echo $linha("ativo_categoria") ?></td>
-            <td><a href="editar_categoria.php?id=<?php echo $linha("id_categoria") ?>">Editar</td>
-            <td><a href="excluir_categoria.php?id=<?php echo $linha("id_categoria") ?>">Excluir</td>
 
-            <td><?php echo $linha("") ?></td>
+        <tr>
+            <td>ID</td>
+            <td>Categoria</td>
+            <td>Ativo:</td>
+            <td coslpan="2">Opção</td>
         </tr>
+
 
         <?php
 
@@ -30,11 +29,16 @@
         ?>
 
             <tr>
-                <td>ID</td>
-                <td>Categoria</td>
-                <td>Ativo:</td>
-                <td coslpan="2">Opção</td>
+                <td><?php echo $linha["id_categoria"] ?></td>
+                <td><?php echo $linha["categoria"] ?></td>
+                <td><?php echo $linha["ativo_categoria"] ?></td>
+                <td><a href="editar_categoria.php?id=<?php echo $linha["id_categoria"] ?>">Editar</td>
+                <td><a href="excluir_categoria.php?id=<?php echo $linha["id_categoria"] ?>">Excluir</td>
+
+               
+
             </tr>
+
 
         <?php } ?>
 

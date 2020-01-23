@@ -2,7 +2,7 @@
 
 <?php
 
-    require("conexão.php");
+    require("conexao.php");
     if (isset($_POST["enviado"])){
         $id_categoria = $_POST["id"];
         
@@ -17,7 +17,7 @@
     } else if (isset($_GET["id"])) {
 
         $sql = "SELECT * FROM categoria WHERE id_categoria = ".$_GET["id"];
-        $qry = mysqli_query($conexão, $sql);
+        $qry = mysqli_query($conexao, $sql);
         $linha = mysqli_fetch_array($qry);
 
         $id_categoria = $linha["id_categoria"];

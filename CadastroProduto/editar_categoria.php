@@ -2,7 +2,7 @@
 
 <?php
 
-    require("conexão.php");
+    require("conexao.php");
     if (isset($_POST["enviado"])){
         $id_categoria = $_POST["id"];
         $categoria = $_POST["categoria"];
