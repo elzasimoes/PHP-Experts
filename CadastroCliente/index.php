@@ -26,17 +26,19 @@
         <div class="menu">
             <h2>Menu</h2>
             <ul>
-                <li><a href="#" class="glyphicon glyphicon-home"> Home</a></li>
-                <li><a href="#" class="glyphicon glyphicon-new-window"> Novo</a></li>
-                <li><a href="#" class="glyphicon glyphicon-pencil"> Alterar</a></li>
-                <li><a href="#" class="glyphicon glyphicon-trash"> Excluir</a></li>
-                <li><a href="#" class="glyphicon glyphicon-th-list"> Lista</a></li>
+                <li><a href="index.php?link=1" class="glyphicon glyphicon-home"> Home</a></li>
+                <li><a href="index.php?link=2" class="glyphicon glyphicon-new-window"> Novo</a></li>
+                <li><a href="index.php?link=3" class="glyphicon glyphicon-pencil"> Alterar</a></li>
+                <li><a href="index.php?link=3" class="glyphicon glyphicon-trash"> Excluir</a></li>
+                <li><a href="index.php?link=3" class="glyphicon glyphicon-th-list"> Lista</a></li>
             </ul>
         </div>
 
 
         <div class="meio">
+
             <?php
+
             $link = $_GET["link"];
 
             $pag[1] = "home.php";
@@ -57,7 +59,11 @@
         </div>
         <div class="limpar"></div>
         <div class="rodape">
-            <p>Copyright @ElzaSimões</p>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://github.com/elzasimoes"> @Github/ElzaSimões</a></p>
+            </div>
+
+
         </div>
 </body>
 

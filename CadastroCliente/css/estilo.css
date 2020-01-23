@@ -179,3 +179,49 @@ form.pesquisa button {
 form.pesquisa button:hover {
     background: #0b7dda;
 }
+
+.home {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icone {
+    width: 260px;
+    height: 193px;
+    text-decoration: none;
+    float: left;
+    border: solid 1px #DDD;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    background: #f8f4f4;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.icone a:hover {
+    text-decoration: none;
+    transform: translateY(-20px);
+    background: rgb(117, 7, 7);
+    transition: all 0.5s ease;
+}
+
+.icone p {
+    padding-top: 10px;
+}
+
+.numero b {
+    background: #01636C;
+    padding: 7px;
+    display: inline-block;
+    color: #FFF;
+    font-weight: inherit;
+}
+
+.numero span a {
+    display: inline-block;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
