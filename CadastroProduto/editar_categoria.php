@@ -6,7 +6,7 @@
     if (isset($_POST["enviado"])){
         $id_categoria = $_POST["id"];
         $categoria = $_POST["categoria"];
-        $ativo = $_POST["ativo"];
+        $ativo = $_POST["ativo_categoria"];
 
         $sql = "UPDATE categoria SET categoria = '$categoria', ativo_categoria = '$ativo' WHERE id_categoria = $id_categoria";
         $qry = mysqli_query($conexao, $sql);

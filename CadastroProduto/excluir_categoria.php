@@ -45,7 +45,7 @@
                 <input type="hidden" name="enviado" value="ok">
                 <input type="hidden" name="id" value="<?php echo $id_categoria?>">
 
-                <input type="submit" value="Cadastrar">
+                <input type="submit" value="Excluir">
 
            </form>
 <body>

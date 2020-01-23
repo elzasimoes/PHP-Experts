@@ -5,7 +5,7 @@
 require("conexao.php");
 if (isset($_POST["enviado"])) {
     $categoria = $_POST["categoria"];
-    $ativo = $_POST["ativo_produto"];
+    $ativo = $_POST["ativo_categoria"];
 
     $sql = "INSERT INTO categoria (categoria, ativo_categoria) VALUES('$categoria','$ativo')";
     $qry = mysqli_query($conexao, $sql);
