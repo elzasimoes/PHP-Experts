@@ -16,10 +16,10 @@
         <div class="topo">
             <a href="" class="logo"></a>
             <h1>Sistema de Cadastro</h1>
-                <form class="pesquisa" action="">
-                    <input type="text" placeholder="Buscar.." name="buscar">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+            <form class="pesquisa" action="">
+                <input type="text" placeholder="Buscar.." name="buscar">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
 
             </form>
         </div>
@@ -36,16 +36,24 @@
 
 
         <div class="meio">
-            <?php 
-                $link = $_GET["link"];
+            <?php
+            $link = $_GET["link"];
 
-                $pag[1] = "home.php";
-                $pag[2] = "cadastro.php";
-                $pag[3] = "lista.php";
+            $pag[1] = "home.php";
+            $pag[2] = "cadastro.php";
+            $pag[3] = "lista.php";
 
-            
-             ?>
-             
+            if (!empty($link)) {
+
+                if (file_exists($pag[$link])) {
+                    include $pag[$link];
+                } else {
+                    include "home.php";
+                }
+            } else {
+                include "home.php";
+            } ?>
+
         </div>
         <div class="limpar"></div>
         <div class="rodape">
