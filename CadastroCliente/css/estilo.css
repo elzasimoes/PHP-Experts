@@ -238,6 +238,25 @@ form.pesquisa button:hover {
     color: #222;
     padding: 10px 0px;
 }
+
+.listagem .alterar {
+    background: url(../imagens/icon-alterar.png) no-repeat;
+    background-size: 80%;
+    width: 10px;
+    height: 16px;
+    float: left;
+}
+
+.listagem .excluir {
+    background: url(../imagens/icon-excluir.png) no-repeat;
+    background-size: 80%;
+    width: 10px;
+    height: 16px;
+    float: left;
+}
+
+
+
 .numero b {
     background: #01636C;
     padding: 7px;
