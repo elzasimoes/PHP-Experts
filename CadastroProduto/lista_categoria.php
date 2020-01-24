@@ -5,18 +5,27 @@
 <head>
     <meta charset="utf-8">
     <title> Sistema de Produto</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="nova_categoria.php">Novo Cadastro</a></li>
+  </ol>
+</nav>
 
-    <a href="index.php"> Home </a> | <a href="nova_categoria.php">Novo Cadastro</a>
-    <table border="1">
-
+    <table border="5">
+        <thead class="thead-dark">
         <tr>
-            <td>ID</td>
-            <td>Categoria</td>
-            <td>Ativo:</td>
-            <td coslpan="2">Opção</td>
+        <th scope="col">ID</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Ativo</th>
+        <th scope="col">Opções</th>
         </tr>
 
 

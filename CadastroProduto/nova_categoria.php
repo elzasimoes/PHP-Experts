@@ -24,6 +24,10 @@ if (isset($_POST["enviado"])) {
 <head>
     <meta charset="utf-8">
     <title> Sistema de Produto</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -34,7 +38,7 @@ if (isset($_POST["enviado"])) {
         Ativo <input type="text" name="ativo">
 
         <input type="hidden" name="enviado" value="ok">
-        <input type="submit" value="Cadastrar">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
 
     </form>
 
