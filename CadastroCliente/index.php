@@ -19,9 +19,7 @@
             <form class="pesquisa" action="">
                 <input type="text" placeholder="Buscar.." name="buscar">
                 <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
 
-            </form>
         </div>
         <div class="menu">
             <h2>Menu</h2>
@@ -57,10 +55,12 @@
             } ?>
 
         </div>
+
         <div class="limpar"></div>
+
         <div class="rodape">
             <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://github.com/elzasimoes"> @Github/ElzaSimões</a></p>
+                <a href="https://github.com/elzasimoes"> @Github/ElzaSimões </a>
             </div>
 
 
