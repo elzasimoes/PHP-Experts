@@ -255,7 +255,59 @@ form.pesquisa button:hover {
     float: left;
 }
 
+.listagem .novo a {
+    display: block;
+    background: #ff7f00;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
 
+}
+
+.cadastro {
+    widows: 100%;
+}
+
+.cadastro form {
+    margin-top: 30px;
+}
+
+.cadastro label {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #A40000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cadastro input, select, textarea {
+    width: 100%;
+    background: #FBFBFB;
+    border: solid 1px #ddd;
+}
+
+.cadastro .but {
+    width: 150px;
+    background: #004c66;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.cadastro .but:hover{
+    background: #004D95;
+}
+
+.mn {
+    width: 49%;
+    float: left;
+    margin-left: 6px;
+}
 
 .numero b {
     background: #01636C;

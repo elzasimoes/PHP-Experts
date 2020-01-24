@@ -42,7 +42,7 @@
 
         <tr>
             <td colspan="3"></td>
-            <td colspan="2">Novo Cadastro</td>
+            <td colspan="2"><span class="novo"> <a href="index.php?link=2"> Novo Cadastro </a></td>
 
         </tr>
     </table>
