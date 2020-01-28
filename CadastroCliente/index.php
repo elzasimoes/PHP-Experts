@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+
+require("config.php");
+require("include/crud.php");
+
+?>
 <html>
 
 <head>
