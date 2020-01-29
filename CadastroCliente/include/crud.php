@@ -12,7 +12,7 @@ function abrirConexao()
 
 function fecharConexao($conexao)
 {
-    @mysqli_close($conexao) or die (mysqli_error($conexao);)
+    @mysqli_close($conexao) or die (mysqli_error($conexao));
 }
 
 

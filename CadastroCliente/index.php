@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <?php
 
-require("config.php");
+require("include/config.php");
 require("include/crud.php");
+abrirConexao();
 
 ?>
 <html>
