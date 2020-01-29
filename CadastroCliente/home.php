@@ -1,7 +1,7 @@
 <h1>Home</h1>
 
 <div class="numero">
-    <b>Número de Registros</b> <span>XX Pessoas Cadastradas</span>
+    <b>Número de Registros</b> <span><?php echo total("select * from cliente")?> Pessoas Cadastradas</span>
 </div>
 
 <div class="home">

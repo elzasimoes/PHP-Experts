@@ -41,3 +41,8 @@ function consultar($tabela, $condicao = null, $campos = "*")
         return $dados;
     }
 }
+
+function total ($sql) {
+    $qry = executar($sql);
+    return mysqli_num_rows($qry);
+}
